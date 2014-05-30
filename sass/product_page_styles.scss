@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+$body_font:'Lato', 'sans-serif';
+$h_color:#00265D;
+$font_color:#969696;
+$light_blue_color:#54B7DF;
+$lime_green_color: #A7C539;
+$orange_color: #E47832;
+
+@mixin h4_style
+{
+	font-family: $body_font;
+	font-size: 20px;
+	color:$h_color;
+}
+
+@mixin h5_style
+{
+	color:$h_color;
+	font-family: $body_font;
+	font-size: 17px;
+}
+
+@mixin round_edge($color, $width:5px, $rounding:10px)
+{
+	-moz-border-radius: $rounding $rounding;
+	-webkit-border-radius: $rounding $rounding;
+	-khtml-border-radius: $rounding $rounding;
+	-o-border-radius: $rounding $rounding;
+	border-radius: $rounding $rounding;
+	border: $width $color solid;
+	background-color: $orange_color;
+	width: 250px;
+	margin: 0 auto;
+	font-weight: bold;
+	color: white;
+	
+}
+
+@mixin generality{
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+	line-height: 30px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 1060px;
+	margin: 0 auto;
+	font-family: $body_font;
+	margin-bottom: 20px;
+}
+
+hr{
+	height: 4px;
+	color: $light_blue_color;
+	background-color: $light_blue_color;
+}
+
+.how_h3{
+	margin-bottom: 70px;
+	text-align: center;
+	font-size: 25px;
+	color: $orange_color;
+}
+
+.split_one{
+	width: 450px;
+	float: left;
+	display: inline;
+	list-style: none;
+	margin-left: 10px;
+}
+
+.split_two{
+	@extend .split_one;
+	margin-left: 80px;
+}
+
+.numero{
+	color: $h_color;
+	font-weight: bold;
+}
+
+.reliant_warranty{
+	@include generality;
+	height: 850px;
+		>img{
+			float: left;
+			margin-bottom: 60px;
+			top: 30px;
+			position: relative;
+		}
+}
+
+.war_ranty{
+	width:650px;
+	float: right;
+	margin-top: 50px;
+		>p{
+		width: 600px;
+		margin-left: 40px;
+		}
+	
+		.how_h6{
+		margin: 0 auto;
+		font-size: 25px;
+		width: 200px;
+		position: relative;
+		margin-bottom: 40px;
+		}
+}
+
+
+.first_p{
+	@include generality;
+	height: 770px;
+}
+
+.last_pp{
+	margin-bottom:40px;
+	font-size: 20px;
+	color: $font_color;
+	>a{
+		text-decoration: none;
+		color: $lime_green_color;
+		}
+}
+
+.how_h4{
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.how_vid{
+	@include generality;
+	clear: both;
+	
+}
+
+.reliant_vid{
+	margin: 0 auto;
+	display: block;
+	padding-bottom: 40px;
+}
+
+.question_photo{
+	@include generality;
+	padding-bottom: 30px;
+	height: 340px;
+
+		>img{
+			width: 550px;
+			height: 320px;
+			margin-top: 10px;
+			float: left;
+		}
+}
+
+.quest_ion{
+	float: right;
+	width:400px;
+	text-align: center;
+	margin-top: 100px;
+	
+		>h4{
+			margin-bottom: 70px;
+			}
+}
+
+.but_ton{
+	@include round_edge (transparent)
+}
+
+h4{
+	@include h4_style;
+}
+
+h5{
+	@include h5_style;
+}
+
+.certi_fied{
+	@include generality;
+	clear:both;
+	height: 1100px;
+}
+
+.rock_solid{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+.pp_page{
+	padding-left: 20px;
+	width: 450px;
+	float: left;
+	display: inline;
+	list-style: none;
+}
+
+.pp_page_two{
+	padding-left: 20px;
+	width: 450px;
+	float: right;
+	list-style: none;
+}
+
+.product_page{
+	margin-bottom: 20px;
+	color: $font_color;
+}
+
+.last_least{
+	clear: both;
+	@include generality;
+}
+
+.brands_re{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.product_partners{
+	margin: 0 auto;
+	display: block;
+	width: 600px;
+	margin-bottom: 10px;
+}
+
+/*----------START TABLE STYLE------------*/
+
+#chart4{
+	width: 1010px;
+	border: none;
+	padding: 5px;
+	border-collapse: separate;
+	border-spacing: 5px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.corner{
+	background-color: $lime_green_color;
+	color: white;
+	font-size: medium;
+	vertical-align: middle;
+	width: 20%;
+}
+
+.label_even{
+	background-color: lighten($lime_green_color, 35%);
+	text-align: center;
+	width: 20%;
+}
+
+.label_odd{
+	background-color: lighten($lime_green_color, 20%);
+	text-align: center;
+	width: 20%;
+}
+
+.data_even{
+	text-align: center;
+	background-color: lighten($light_blue_color, 35%);
+}
+
+.data_odd{
+	text-align: center;
+	background-color: lighten($light_blue_color, 20%);
+}
+
+.head_er{
+	background-color: $h_color;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,293 @@
+/*CSS Document*/
+@charset "UTF-8";
+
+$font_for_store: 'Lato', 'sans-serif';
+$bgr_color:#54B7DF;
+$other_color:#00265D;
+$rt_color:#A7C539;
+$bg_gradient:-webkit-linear-gradient(#ffffff 0%, #c0c0c0 215%);
+@mixin storage{
+	width:580px;
+	height:140px;
+	float:right;
+	margin-right:40px;
+	font-size:17px;
+	line-height:22px;
+	padding-top:25px;
+	font-weight: 400;
+	font-family: $font_for_store;
+	color: rgb(102, 102, 102);
+};
+
+@mixin navpage_a{
+	display: block;
+	color: $other_color;
+	background-color: $bgr_color;
+	padding: .8em 3.8em;
+	border:.1em $other_color;
+}
+
+@mixin header_top{
+	height:58px;
+	margin-bottom:10px;
+	padding-top:20px;
+}
+
+@mixin nav_page{
+	height: 20px;
+	margin-bottom:50px;
+	font-weight: bold;
+	font-family: $font_for_store;
+}
+
+@mixin the_keyword_class{
+	font-family: Arial;
+	font-weight: bold;
+	color: #333;
+	white-space: nowrap;
+	cursor: default;
+	margin: 0;
+	display: inline;
+	background-color: transparent;
+}
+
+/*---------------------START EBAY STYLE-----------------*/
+
+
+div.pagewidth{
+	width:960px;
+	margin: 0 auto;
+	background: $bg_gradient;
+}
+
+
+.v4title h2{
+	font-family: $font_for_store;
+}
+
+#v4-1{
+	margin-right: 10px;
+}
+
+.v4sbox{
+	width: 124px
+}
+
+.fpcc{
+
+	span.keywordClass{
+		@include the_keyword_class;
+		}
+}
+
+li.v4f{
+	text-decoration: none;
+	font-family: $font_for_store;
+	list-style: none;
+	color: #fff;
+	
+}
+
+table.v4clp li{
+	list-style: none;
+	font-family: $font_for_store;
+	a{
+		color: $other_color;
+		font-weight: bold;
+	}
+}
+
+table.stBadge-accent td{
+	background-color: #54B7DF;
+}
+
+.stBadge-accent{
+	padding-bottom: 0px !important;
+}
+
+.whiter-rcp .whiter-s_nf .whiter-w{
+	background: none;
+	height: 0px;
+}
+
+.whiter-rcp{
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+#sModule{
+	padding-bottom: 1px;
+}
+
+.r3{
+	width: 95%;
+	border: 0;
+	margin: 0 auto;
+	margin-right: 25px;
+}
+
+/*---------------------END EBAY STYLE-----------------*/
+
+
+/*------------------START PRODUCT LISTING STYLE-------------*/
+
+/*------------------END PRODUCT LISTING STYLE-------------*/
+
+
+/*---------------------START HEADER STYLE-----------------*/
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	font-size:100%;
+}
+
+body{
+	font-family: $font_for_store;
+}
+
+#wrapper{
+	margin: 0 auto;
+	width: 960px;
+}
+
+#header{
+    height:400px;
+}
+
+#top_header{
+	@include header_top;
+}
+
+#logo_holder{
+	float:left;
+	
+		.logo{
+		width:250px;
+		}
+}
+
+#info{
+	text-align:right;
+	float:right;
+	font-family:$font_for_store;
+	font-size: 16px;
+}
+
+#page_navigation{
+	@include nav_page;
+	
+		a{
+			@include navpage_a;
+			
+		}
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		ul{
+			float: left;
+		}
+		
+		li{
+			float: left;
+			list-style: none;
+			position: relative;
+				
+				li{
+					float: none;
+					
+					a{
+						border-right-style: none;
+						border-top-style: solid;
+					}
+				}
+			
+				a{
+					display: block;
+					border-right-style: solid;
+					background-clip: padding-box;
+					text-decoration: none;
+				}
+				
+				ul{
+					display: none;
+					position: absolute;
+					left: 0;
+					top: 100%;
+				}
+		}
+}
+
+#page_navigation a:hover{
+					color:$bgr_color;
+					background-color:$other_color;	
+				}
+
+#page_navigation a:hover > ul{
+					display: block;
+}
+				
+#page_navigation a:active{
+					background: $bgr_color;
+					color: $other_color;
+				}
+
+#page_navigation li:last-child a{
+					border-right-style: none;
+				}
+
+#video_holder{
+	clear:both;
+	height:215px;
+	border-bottom: solid 4px $bgr_color !important;
+	padding-bottom: 10px;
+}
+
+#video_player{
+	width:316px;
+	height:197px;
+	float:left;
+	padding-top: 10px;
+	
+		>img{
+		width:316px;
+		height:197px;
+		}
+}
+
+#storage_made_easy{
+	@include storage;
+}
+
+.rt{
+	color: $rt_color;
+}
+
+#sub_p{
+	
+	width:500px;
+}
+
+#main{
+	h2{
+		font-weight: bold;
+	}
+	width: 520px;
+	margin: 0 auto;
+}
+
+/*---------------------END HEADER STYLE-----------------*/
+
+
+/*---------------------START CERTIFICATION STYLE-----------------*/
+
+/*---------------------END CERTIFICATION STYLE-----------------*/
+
+
