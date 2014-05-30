@@ -1,11 +1,12 @@
 @charset "UTF-8";
-/* line 47, ../sass/product_page_styles.scss */
+/*----------START STYLE------------*/
+/* line 93, ../sass/product_page_styles.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 52, ../sass/product_page_styles.scss */
+/* line 98, ../sass/product_page_styles.scss */
 .wrapper {
   width: 1060px;
   margin: 0 auto;
@@ -13,14 +14,14 @@
   margin-bottom: 20px;
 }
 
-/* line 59, ../sass/product_page_styles.scss */
+/* line 105, ../sass/product_page_styles.scss */
 hr {
   height: 4px;
   color: #54b7df;
   background-color: #54b7df;
 }
 
-/* line 65, ../sass/product_page_styles.scss */
+/* line 111, ../sass/product_page_styles.scss */
 .how_h3 {
   margin-bottom: 70px;
   text-align: center;
@@ -28,7 +29,7 @@ hr {
   color: #e47832;
 }
 
-/* line 72, ../sass/product_page_styles.scss */
+/* line 118, ../sass/product_page_styles.scss */
 .split_one, .split_two {
   width: 450px;
   float: left;
@@ -37,18 +38,18 @@ hr {
   margin-left: 10px;
 }
 
-/* line 80, ../sass/product_page_styles.scss */
+/* line 126, ../sass/product_page_styles.scss */
 .split_two {
   margin-left: 80px;
 }
 
-/* line 85, ../sass/product_page_styles.scss */
+/* line 131, ../sass/product_page_styles.scss */
 .numero {
   color: #00265d;
   font-weight: bold;
 }
 
-/* line 90, ../sass/product_page_styles.scss */
+/* line 136, ../sass/product_page_styles.scss */
 .reliant_warranty {
   padding-top: 30px;
   padding-right: 30px;
@@ -56,7 +57,7 @@ hr {
   line-height: 30px;
   height: 850px;
 }
-/* line 93, ../sass/product_page_styles.scss */
+/* line 139, ../sass/product_page_styles.scss */
 .reliant_warranty > img {
   float: left;
   margin-bottom: 60px;
@@ -64,18 +65,18 @@ hr {
   position: relative;
 }
 
-/* line 101, ../sass/product_page_styles.scss */
+/* line 147, ../sass/product_page_styles.scss */
 .war_ranty {
   width: 650px;
   float: right;
   margin-top: 50px;
 }
-/* line 105, ../sass/product_page_styles.scss */
+/* line 151, ../sass/product_page_styles.scss */
 .war_ranty > p {
   width: 600px;
   margin-left: 40px;
 }
-/* line 110, ../sass/product_page_styles.scss */
+/* line 156, ../sass/product_page_styles.scss */
 .war_ranty .how_h6 {
   margin: 0 auto;
   font-size: 25px;
@@ -84,7 +85,7 @@ hr {
   margin-bottom: 40px;
 }
 
-/* line 120, ../sass/product_page_styles.scss */
+/* line 166, ../sass/product_page_styles.scss */
 .first_p {
   padding-top: 30px;
   padding-right: 30px;
@@ -93,26 +94,28 @@ hr {
   height: 770px;
 }
 
-/* line 125, ../sass/product_page_styles.scss */
-.last_pp {
+/* line 171, ../sass/product_page_styles.scss */
+.last_pp, .last_po, .ship_ing > p, .detail_one, .detail_two, .detail_three, .detail_four {
   margin-bottom: 40px;
   font-size: 20px;
-  color: #969696;
+  color: #4d4d4f;
 }
-/* line 129, ../sass/product_page_styles.scss */
-.last_pp > a {
+/* line 175, ../sass/product_page_styles.scss */
+.last_pp > a, .last_po > a, .ship_ing > p > a, .detail_one > a, .detail_two > a, .detail_three > a, .detail_four > a {
   text-decoration: none;
   color: #a7c539;
 }
 
-/* line 135, ../sass/product_page_styles.scss */
+/* line 181, ../sass/product_page_styles.scss */
 .how_h4 {
-  margin-bottom: 30px;
   text-align: center;
   font-size: 25px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-/* line 141, ../sass/product_page_styles.scss */
+/* line 189, ../sass/product_page_styles.scss */
 .how_vid {
   padding-top: 30px;
   padding-right: 30px;
@@ -121,14 +124,14 @@ hr {
   clear: both;
 }
 
-/* line 147, ../sass/product_page_styles.scss */
+/* line 195, ../sass/product_page_styles.scss */
 .reliant_vid {
   margin: 0 auto;
   display: block;
   padding-bottom: 40px;
 }
 
-/* line 153, ../sass/product_page_styles.scss */
+/* line 201, ../sass/product_page_styles.scss */
 .question_photo {
   padding-top: 30px;
   padding-right: 30px;
@@ -137,7 +140,7 @@ hr {
   padding-bottom: 30px;
   height: 340px;
 }
-/* line 158, ../sass/product_page_styles.scss */
+/* line 206, ../sass/product_page_styles.scss */
 .question_photo > img {
   width: 550px;
   height: 320px;
@@ -145,19 +148,19 @@ hr {
   float: left;
 }
 
-/* line 166, ../sass/product_page_styles.scss */
+/* line 214, ../sass/product_page_styles.scss */
 .quest_ion {
   float: right;
   width: 400px;
   text-align: center;
   margin-top: 100px;
 }
-/* line 172, ../sass/product_page_styles.scss */
-.quest_ion > h4 {
+/* line 220, ../sass/product_page_styles.scss */
+.quest_ion > h4, .detail_one.quest_ion > h5, .detail_two.quest_ion > h5, .detail_three.quest_ion > h5, .detail_four.quest_ion > h5 {
   margin-bottom: 70px;
 }
 
-/* line 177, ../sass/product_page_styles.scss */
+/* line 225, ../sass/product_page_styles.scss */
 .but_ton {
   -moz-border-radius: 10px 10px;
   -webkit-border-radius: 10px 10px;
@@ -172,21 +175,21 @@ hr {
   color: white;
 }
 
-/* line 181, ../sass/product_page_styles.scss */
-h4 {
+/* line 229, ../sass/product_page_styles.scss */
+h4, .detail_one > h5, .detail_two > h5, .detail_three > h5, .detail_four > h5 {
   font-family: "Lato", "sans-serif";
   font-size: 20px;
   color: #00265d;
 }
 
-/* line 185, ../sass/product_page_styles.scss */
+/* line 233, ../sass/product_page_styles.scss */
 h5 {
   color: #00265d;
   font-family: "Lato", "sans-serif";
   font-size: 17px;
 }
 
-/* line 189, ../sass/product_page_styles.scss */
+/* line 237, ../sass/product_page_styles.scss */
 .certi_fied {
   padding-top: 30px;
   padding-right: 30px;
@@ -196,14 +199,14 @@ h5 {
   height: 1100px;
 }
 
-/* line 195, ../sass/product_page_styles.scss */
+/* line 243, ../sass/product_page_styles.scss */
 .rock_solid {
   display: block;
   margin: 0 auto;
   margin-bottom: 35px;
 }
 
-/* line 201, ../sass/product_page_styles.scss */
+/* line 249, ../sass/product_page_styles.scss */
 .pp_page {
   padding-left: 20px;
   width: 450px;
@@ -212,7 +215,7 @@ h5 {
   list-style: none;
 }
 
-/* line 209, ../sass/product_page_styles.scss */
+/* line 257, ../sass/product_page_styles.scss */
 .pp_page_two {
   padding-left: 20px;
   width: 450px;
@@ -220,13 +223,13 @@ h5 {
   list-style: none;
 }
 
-/* line 216, ../sass/product_page_styles.scss */
-.product_page {
+/* line 264, ../sass/product_page_styles.scss */
+.product_page, .pp_listing {
   margin-bottom: 20px;
-  color: #969696;
+  color: #4d4d4f;
 }
 
-/* line 221, ../sass/product_page_styles.scss */
+/* line 269, ../sass/product_page_styles.scss */
 .last_least {
   clear: both;
   padding-top: 30px;
@@ -235,13 +238,13 @@ h5 {
   line-height: 30px;
 }
 
-/* line 226, ../sass/product_page_styles.scss */
+/* line 274, ../sass/product_page_styles.scss */
 .brands_re {
   text-align: center;
   margin-top: 20px;
 }
 
-/* line 231, ../sass/product_page_styles.scss */
+/* line 279, ../sass/product_page_styles.scss */
 .product_partners {
   margin: 0 auto;
   display: block;
@@ -250,7 +253,7 @@ h5 {
 }
 
 /*----------START TABLE STYLE------------*/
-/* line 240, ../sass/product_page_styles.scss */
+/* line 290, ../sass/product_page_styles.scss */
 #chart4 {
   width: 1010px;
   border: none;
@@ -261,7 +264,7 @@ h5 {
   margin: 0 auto;
 }
 
-/* line 250, ../sass/product_page_styles.scss */
+/* line 300, ../sass/product_page_styles.scss */
 .corner {
   background-color: #a7c539;
   color: white;
@@ -270,34 +273,235 @@ h5 {
   width: 20%;
 }
 
-/* line 258, ../sass/product_page_styles.scss */
+/* line 308, ../sass/product_page_styles.scss */
 .label_even {
   background-color: #e4eec3;
   text-align: center;
   width: 20%;
 }
 
-/* line 264, ../sass/product_page_styles.scss */
+/* line 314, ../sass/product_page_styles.scss */
 .label_odd {
   background-color: #cadc88;
   text-align: center;
   width: 20%;
 }
 
-/* line 270, ../sass/product_page_styles.scss */
+/* line 320, ../sass/product_page_styles.scss */
 .data_even {
   text-align: center;
   background-color: #eaf6fb;
 }
 
-/* line 275, ../sass/product_page_styles.scss */
+/* line 325, ../sass/product_page_styles.scss */
 .data_odd {
   text-align: center;
   background-color: #aadbef;
 }
 
-/* line 280, ../sass/product_page_styles.scss */
+/* line 330, ../sass/product_page_styles.scss */
 .head_er {
   background-color: #00265d;
   color: white;
+}
+
+/*----------END TABLE STYLE------------*/
+/* line 339, ../sass/product_page_styles.scss */
+.payment_options {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  line-height: 30px;
+  height: 400px;
+}
+/* line 343, ../sass/product_page_styles.scss */
+.payment_options > img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 349, ../sass/product_page_styles.scss */
+.last_po {
+  text-align: center;
+}
+
+/* line 354, ../sass/product_page_styles.scss */
+.accept_ance {
+  color: #e47832;
+}
+
+/* line 362, ../sass/product_page_styles.scss */
+.po_list {
+  width: 300px;
+  float: left;
+  margin-left: 80px;
+}
+
+/* line 368, ../sass/product_page_styles.scss */
+.ship_ing {
+  padding-top: 30px;
+  line-height: 30px;
+  height: 580px;
+}
+/* line 373, ../sass/product_page_styles.scss */
+.ship_ing > p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 380, ../sass/product_page_styles.scss */
+.detail_one {
+  border: solid red 1px;
+  width: 230px;
+  height: 320px;
+  background-color: #54b7df;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
+  border: 5px transparent solid;
+  float: left;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+/* line 386, ../sass/product_page_styles.scss */
+.detail_one > h5 {
+  font-weight: bold;
+  background-color: #a7c539;
+  text-align: center;
+  border-bottom: solid white 4px;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
+  border: 5px transparent solid;
+}
+/* line 390, ../sass/product_page_styles.scss */
+.detail_one > p {
+  color: white;
+  font-size: small;
+  padding: 5px;
+}
+
+/* line 396, ../sass/product_page_styles.scss */
+.detail_two {
+  border: solid red 1px;
+  width: 230px;
+  height: 320px;
+  background-color: #54b7df;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
+  border: 5px transparent solid;
+  float: left;
+  margin-right: 10px;
+}
+/* line 400, ../sass/product_page_styles.scss */
+.detail_two > h5 {
+  font-weight: bold;
+  background-color: #a7c539;
+  text-align: center;
+  border-bottom: solid white 4px;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
+  border: 5px transparent solid;
+}
+/* line 404, ../sass/product_page_styles.scss */
+.detail_two > p {
+  color: white;
+  font-size: small;
+  padding: 5px;
+}
+
+/* line 409, ../sass/product_page_styles.scss */
+.detail_three {
+  border: solid red 1px;
+  width: 230px;
+  height: 320px;
+  background-color: #54b7df;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
+  border: 5px transparent solid;
+  float: left;
+  margin-right: 10px;
+}
+/* line 412, ../sass/product_page_styles.scss */
+.detail_three > h5 {
+  font-weight: bold;
+  background-color: #a7c539;
+  text-align: center;
+  border-bottom: solid white 4px;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
+  border: 5px transparent solid;
+}
+/* line 416, ../sass/product_page_styles.scss */
+.detail_three > p {
+  color: white;
+  font-size: small;
+  padding: 5px;
+}
+
+/* line 422, ../sass/product_page_styles.scss */
+.detail_four {
+  border: solid red 1px;
+  width: 230px;
+  height: 320px;
+  background-color: #54b7df;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
+  border: 5px transparent solid;
+  float: left;
+  margin-right: 10px;
+}
+/* line 425, ../sass/product_page_styles.scss */
+.detail_four > h5 {
+  font-weight: bold;
+  background-color: #a7c539;
+  text-align: center;
+  border-bottom: solid white 4px;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  -khtml-border-radius: 10px 10px;
+  -o-border-radius: 10px 10px;
+  border-radius: 10px 10px;
+  border: 5px transparent solid;
+}
+/* line 429, ../sass/product_page_styles.scss */
+.detail_four > p {
+  color: white;
+  font-size: small;
+  padding: 5px;
+}
+
+/* line 435, ../sass/product_page_styles.scss */
+.sale_lease {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  line-height: 30px;
+  height: 500px;
+}
+/* line 439, ../sass/product_page_styles.scss */
+.sale_lease > img {
+  display: block;
+  margin: auto 0;
+  border: solid red 1px;
+  width: 600px;
 }

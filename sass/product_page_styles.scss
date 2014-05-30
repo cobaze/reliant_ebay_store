@@ -2,10 +2,13 @@
 
 $body_font:'Lato', 'sans-serif';
 $h_color:#00265D;
-$font_color:#969696;
+$font_color:#4d4d4f;
 $light_blue_color:#54B7DF;
 $lime_green_color: #A7C539;
 $orange_color: #E47832;
+$border: solid red 1px;
+$margin_right: 10px;
+
 
 @mixin h4_style
 {
@@ -37,12 +40,55 @@ $orange_color: #E47832;
 	
 }
 
-@mixin generality{
+@mixin generality
+{
 	padding-top: 30px;
 	padding-right: 30px;
 	padding-left: 30px;
 	line-height: 30px;
 }
+
+@mixin rounded_edges ($color, $width:5px, $rounding:10px)
+{
+	-moz-border-radius: $rounding $rounding;
+	-webkit-border-radius: $rounding $rounding;
+	-khtml-border-radius: $rounding $rounding;
+	-o-border-radius: $rounding $rounding;
+	border-radius: $rounding $rounding;
+	border: $width $color solid;
+	
+}
+
+@mixin details
+{
+	@extend .last_pp;
+	border: $border;
+	width: 230px;
+	height: 320px;
+	background-color: $light_blue_color;
+	@include rounded_edges (transparent);
+	float: left;
+}
+
+@mixin header
+{
+	@extend h4;
+	font-weight: bold;
+	background-color: $lime_green_color;
+	text-align: center;
+	border-bottom: solid white 4px;
+	@include rounded_edges (transparent);
+}
+
+@mixin para
+
+{
+	color: white;
+	font-size: small;
+	padding: 5px;
+}
+
+/*----------START STYLE------------*/
 
 *{
 	margin: 0;
@@ -133,9 +179,11 @@ hr{
 }
 
 .how_h4{
-	margin-bottom: 30px;
 	text-align: center;
 	font-size: 25px;
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
 
 .how_vid{
@@ -235,6 +283,8 @@ h5{
 	margin-bottom: 10px;
 }
 
+
+
 /*----------START TABLE STYLE------------*/
 
 #chart4{
@@ -283,10 +333,116 @@ h5{
 }
 
 
+/*----------END TABLE STYLE------------*/
 
 
+.payment_options{
+	@include generality;
+	height: 400px;
+	
+		>img{
+				margin: 0 auto;
+				display: block;
+			}
+}
 
+.last_po{
+	@extend .last_pp;
+	text-align: center;
+}
 
+.accept_ance{
+	color: $orange_color;
+}
+
+.pp_listing{
+	@extend .product_page;
+}
+
+.po_list{
+	width: 300px;
+	float: left;
+	margin-left: 80px;
+}
+		
+.ship_ing{
+	padding-top: 30px;
+	line-height: 30px;
+	height: 580px;
+	
+		>p{
+			@extend .last_pp;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+}		
+
+.detail_one{
+		@include details;
+		margin-right: $margin_right;
+		margin-left: 30px;
+		
+		
+			>h5{
+				@include header;
+			}
+			
+			>p{
+				@include para;
+			}
+		
+}
+
+.detail_two{
+		@include details;
+		margin-right: $margin_right;
+		
+			>h5{
+				@include header;
+			}
+			
+			>p{
+				@include para;
+			}
+		
+}
+.detail_three{
+		@include details;
+		margin-right: $margin_right;
+			>h5{
+				@include header;
+			}
+			
+			>p{
+				@include para;
+			}
+		
+}
+
+.detail_four{
+		@include details;
+		margin-right: $margin_right;
+			>h5{
+				@include header;
+			}
+			
+			>p{
+				@include para;
+			}
+		
+}
+
+.sale_lease{
+		@include generality;
+		height: 500px;
+		
+			>img{
+				display: block;
+				margin: auto 0;
+				border: $border;
+				width: 600px;
+			}
+}
 
 
 
