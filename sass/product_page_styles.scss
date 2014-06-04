@@ -61,23 +61,20 @@ $margin_right: 10px;
 
 @mixin details
 {
-	@extend .last_pp;
 	border: $border;
 	width: 230px;
 	height: 320px;
 	background-color: $light_blue_color;
-	@include rounded_edges (transparent);
 	float: left;
 }
 
 @mixin header
 {
-	@extend h4;
 	font-weight: bold;
 	background-color: $lime_green_color;
 	text-align: center;
 	border-bottom: solid white 4px;
-	@include rounded_edges (transparent);
+	
 }
 
 @mixin para
@@ -86,6 +83,13 @@ $margin_right: 10px;
 	color: white;
 	font-size: small;
 	padding: 5px;
+}
+
+@mixin the_last_pp
+{
+margin-bottom:40px;
+font-size: 20px;
+color: $font_color;
 }
 
 /*----------START STYLE------------*/
@@ -152,14 +156,14 @@ hr{
 		width: 600px;
 		margin-left: 40px;
 		}
-	
-		.how_h6{
-		margin: 0 auto;
-		font-size: 25px;
-		width: 200px;
-		position: relative;
-		margin-bottom: 40px;
-		}
+}
+
+.how_h6{
+	margin: 0 auto;
+	font-size: 25px;
+	width: 200px;
+	position: relative;
+	margin-bottom: 40px;
 }
 
 
@@ -169,9 +173,8 @@ hr{
 }
 
 .last_pp{
-	margin-bottom:40px;
-	font-size: 20px;
-	color: $font_color;
+	@include the_last_pp;
+	
 	>a{
 		text-decoration: none;
 		color: $lime_green_color;
@@ -347,7 +350,7 @@ h5{
 }
 
 .last_po{
-	@extend .last_pp;
+	@include the_last_pp;
 	text-align: center;
 }
 
@@ -368,81 +371,99 @@ h5{
 .ship_ing{
 	padding-top: 30px;
 	line-height: 30px;
-	height: 580px;
+	height: 560px;
 	
 		>p{
-			@extend .last_pp;
+			@include the_last_pp;
 			padding-left: 30px;
 			padding-right: 30px;
 		}
-}		
-
-.detail_one{
-		@include details;
-		margin-right: $margin_right;
-		margin-left: 30px;
-		
-		
-			>h5{
-				@include header;
-			}
-			
-			>p{
-				@include para;
-			}
-		
 }
 
+.de_tail{
+	height: 330px;
+	padding-left: 30px;
+}
+		
 .detail_two{
 		@include details;
-		margin-right: $margin_right;
-		
-			>h5{
-				@include header;
-			}
-			
-			>p{
-				@include para;
-			}
-		
-}
-.detail_three{
-		@include details;
-		margin-right: $margin_right;
-			>h5{
-				@include header;
-			}
-			
-			>p{
-				@include para;
-			}
-		
+		@include the_last_pp;
+		@include rounded_edges (transparent);
+		margin-right: $margin_right;	
 }
 
-.detail_four{
-		@include details;
-		margin-right: $margin_right;
-			>h5{
-				@include header;
-			}
-			
-			>p{
-				@include para;
-			}
-		
+.d_12{
+	@include header;
+	@include rounded_edges (transparent);
+	@extend h4;
+}
+
+.d_13{
+	@include para;
 }
 
 .sale_lease{
 		@include generality;
-		height: 500px;
+		height: 310px;
+		clear: both;
+		padding-bottom: 30px;
 		
-			>img{
-				display: block;
-				margin: auto 0;
-				border: $border;
-				width: 600px;
-			}
+		>img{
+		display: block;
+		float: left;
+		width: 500px;
+		margin-right: 15px;
+		margin-top: 10px;
+		}
 }
+
+.sell_er{
+	width: 450px;
+	float: right;
+	margin-top: 45px;
+	
+	>h4{
+		text-align: left !important;
+		width: 450px !important;
+	}
+	
+	>ul{
+		padding-left: 25px;
+		@include the_last_pp;
+	}
+	
+}
+
+.sell_trade{
+	@include generality;
+	clear: both;
+	padding-bottom: 30px;
+	>img{
+		display: block;
+		margin:  0 auto;
+		width: 400px;
+	}
+	
+	>h4{
+		@extend .how_h4;
+		margin-top: 40px;
+		width: 700px;
+	}
+	
+	>p{
+		@include the_last_pp;
+		text-align: center;
+		width: 800px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}			
+
+
+
+
+
+
 
 
 
