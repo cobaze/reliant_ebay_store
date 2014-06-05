@@ -226,7 +226,16 @@ hr{
 }
 
 .but_ton{
-	@include round_edge (transparent)
+	@include round_edge (transparent);
+	
+	a{
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.but_ton a:hover{
+	color: #853c00;
 }
 
 h4{
@@ -408,12 +417,14 @@ h5{
 		clear: both;
 		padding-bottom: 30px;
 		
-		>img{
-		display: block;
-		float: left;
-		width: 500px;
-		margin-right: 15px;
-		margin-top: 10px;
+		a{
+			>img{
+			display: block;
+			float: left;
+			width: 500px;
+			margin-right: 15px;
+			margin-top: 10px;
+			}
 		}
 }
 
@@ -437,7 +448,6 @@ h5{
 .sell_trade{
 	@include generality;
 	clear: both;
-	padding-bottom: 30px;
 	>img{
 		display: block;
 		margin:  0 auto;
@@ -455,7 +465,6 @@ h5{
 		text-align: center;
 		width: 800px;
 		margin: 0 auto;
-		margin-bottom: 30px;
 	}
 }			
 

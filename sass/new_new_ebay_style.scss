@@ -6,25 +6,15 @@ $bgr_color:#54B7DF;
 $other_color:#00265D;
 $rt_color:#A7C539;
 $bg_gradient:-webkit-linear-gradient(#ffffff 0%, #c0c0c0 215%);
-@mixin storage{
-	width:580px;
-	height:140px;
-	float:right;
-	margin-right:40px;
-	font-size:17px;
-	line-height:22px;
-	padding-top:25px;
-	font-weight: 400;
-	font-family: $font_for_store;
-	color: rgb(102, 102, 102);
-};
+$border: solid red 1px;
+$list_color:rgb(102, 102, 102);
 
 @mixin navpage_a{
 	display: block;
 	color: $other_color;
 	background-color: $bgr_color;
-	padding: .8em 3.8em;
-	border:.1em $other_color;
+	padding: .8em 1.3em .8em 1.2em;
+	border:.13em $other_color;
 }
 
 @mixin header_top{
@@ -48,7 +38,7 @@ $bg_gradient:-webkit-linear-gradient(#ffffff 0%, #c0c0c0 215%);
 	cursor: default;
 	margin: 0;
 	display: inline;
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 /*---------------------START EBAY STYLE-----------------*/
@@ -183,6 +173,9 @@ body{
 	
 		a{
 			@include navpage_a;
+			border-right-style: solid;
+			background-clip: padding-box;
+			text-decoration: none;
 			
 		}
 		
@@ -199,29 +192,6 @@ body{
 			float: left;
 			list-style: none;
 			position: relative;
-				
-				li{
-					float: none;
-					
-					a{
-						border-right-style: none;
-						border-top-style: solid;
-					}
-				}
-			
-				a{
-					display: block;
-					border-right-style: solid;
-					background-clip: padding-box;
-					text-decoration: none;
-				}
-				
-				ul{
-					display: none;
-					position: absolute;
-					left: 0;
-					top: 100%;
-				}
 		}
 }
 
@@ -245,7 +215,7 @@ body{
 
 #video_holder{
 	clear:both;
-	height:215px;
+	height:255px;
 	border-bottom: solid 4px $bgr_color !important;
 	padding-bottom: 10px;
 }
@@ -254,7 +224,7 @@ body{
 	width:316px;
 	height:197px;
 	float:left;
-	padding-top: 10px;
+	margin-top: 25px;
 	
 		>img{
 		width:316px;
@@ -263,7 +233,14 @@ body{
 }
 
 #storage_made_easy{
-	@include storage;
+	width:580px;
+	height:240px;
+	float:right;
+	font-size:17px;
+	line-height:22px;
+	font-weight: 400;
+	font-family: $font_for_store;
+	color: rgb(102, 102, 102);
 }
 
 .rt{
@@ -275,19 +252,95 @@ body{
 	width:500px;
 }
 
+/*---------------------START OUR PROCESS STYLE-----------------*/
+
+
 #main{
-	h2{
-		font-weight: bold;
-	}
+
 	width: 520px;
 	margin: 0 auto;
+	border: $border;
+	
+	h2{
+	font-weight: bold;
+	}
+	
+	h5{
+	font-size: medium;
+	font-weight: bold;
+	padding-top: 20px;
+	}
 }
+
+.our_comp_two{
+	font-size: 15px;
+	color: $list_color;
+	font-weight: normal;
+	line-height: 22px;
+}
+
+.our_process_list{
+	font-size: 15px;
+	color: $list_color;
+	font-weight: normal;
+	line-height: 22px;
+	
+	li{
+		list-style: none;
+		padding-top: 20px;
+	}
+	
+	h5{
+		font-size: medium;
+		font-weight: bold;
+		padding-top: 5px;
+		
+	}
+}
+
+.para_one{
+	font-weight: bolder;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: $list_color;
+}
+
+.our_clients{
+	margin-top: 10px;
+	color: $list_color;
+}
+
+.clients_pic{
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.company_pic{
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 250px;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.rock_solid{
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+/*---------------------END OUR PROCESS STYLE-----------------*/
 
 /*---------------------END HEADER STYLE-----------------*/
 
 
-/*---------------------START CERTIFICATION STYLE-----------------*/
 
-/*---------------------END CERTIFICATION STYLE-----------------*/
+
+
 
 

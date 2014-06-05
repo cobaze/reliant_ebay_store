@@ -175,22 +175,32 @@ hr {
   font-weight: bold;
   color: white;
 }
+/* line 231, ../sass/product_page_styles.scss */
+.but_ton a {
+  text-decoration: none;
+  color: white;
+}
 
-/* line 232, ../sass/product_page_styles.scss */
+/* line 237, ../sass/product_page_styles.scss */
+.but_ton a:hover {
+  color: #853c00;
+}
+
+/* line 241, ../sass/product_page_styles.scss */
 h4, .d_12 {
   font-family: "Lato", "sans-serif";
   font-size: 20px;
   color: #00265d;
 }
 
-/* line 236, ../sass/product_page_styles.scss */
+/* line 245, ../sass/product_page_styles.scss */
 h5 {
   color: #00265d;
   font-family: "Lato", "sans-serif";
   font-size: 17px;
 }
 
-/* line 240, ../sass/product_page_styles.scss */
+/* line 249, ../sass/product_page_styles.scss */
 .certi_fied {
   padding-top: 30px;
   padding-right: 30px;
@@ -200,14 +210,14 @@ h5 {
   height: 1100px;
 }
 
-/* line 246, ../sass/product_page_styles.scss */
+/* line 255, ../sass/product_page_styles.scss */
 .rock_solid {
   display: block;
   margin: 0 auto;
   margin-bottom: 35px;
 }
 
-/* line 252, ../sass/product_page_styles.scss */
+/* line 261, ../sass/product_page_styles.scss */
 .pp_page {
   padding-left: 20px;
   width: 450px;
@@ -216,7 +226,7 @@ h5 {
   list-style: none;
 }
 
-/* line 260, ../sass/product_page_styles.scss */
+/* line 269, ../sass/product_page_styles.scss */
 .pp_page_two {
   padding-left: 20px;
   width: 450px;
@@ -224,13 +234,13 @@ h5 {
   list-style: none;
 }
 
-/* line 267, ../sass/product_page_styles.scss */
+/* line 276, ../sass/product_page_styles.scss */
 .product_page, .pp_listing {
   margin-bottom: 20px;
   color: #4d4d4f;
 }
 
-/* line 272, ../sass/product_page_styles.scss */
+/* line 281, ../sass/product_page_styles.scss */
 .last_least {
   clear: both;
   padding-top: 30px;
@@ -239,13 +249,13 @@ h5 {
   line-height: 30px;
 }
 
-/* line 277, ../sass/product_page_styles.scss */
+/* line 286, ../sass/product_page_styles.scss */
 .brands_re {
   text-align: center;
   margin-top: 20px;
 }
 
-/* line 282, ../sass/product_page_styles.scss */
+/* line 291, ../sass/product_page_styles.scss */
 .product_partners {
   margin: 0 auto;
   display: block;
@@ -254,7 +264,7 @@ h5 {
 }
 
 /*----------START TABLE STYLE------------*/
-/* line 293, ../sass/product_page_styles.scss */
+/* line 302, ../sass/product_page_styles.scss */
 #chart4 {
   width: 1010px;
   border: none;
@@ -265,7 +275,7 @@ h5 {
   margin: 0 auto;
 }
 
-/* line 303, ../sass/product_page_styles.scss */
+/* line 312, ../sass/product_page_styles.scss */
 .corner {
   background-color: #a7c539;
   color: white;
@@ -274,40 +284,40 @@ h5 {
   width: 20%;
 }
 
-/* line 311, ../sass/product_page_styles.scss */
+/* line 320, ../sass/product_page_styles.scss */
 .label_even {
   background-color: #e4eec3;
   text-align: center;
   width: 20%;
 }
 
-/* line 317, ../sass/product_page_styles.scss */
+/* line 326, ../sass/product_page_styles.scss */
 .label_odd {
   background-color: #cadc88;
   text-align: center;
   width: 20%;
 }
 
-/* line 323, ../sass/product_page_styles.scss */
+/* line 332, ../sass/product_page_styles.scss */
 .data_even {
   text-align: center;
   background-color: #eaf6fb;
 }
 
-/* line 328, ../sass/product_page_styles.scss */
+/* line 337, ../sass/product_page_styles.scss */
 .data_odd {
   text-align: center;
   background-color: #aadbef;
 }
 
-/* line 333, ../sass/product_page_styles.scss */
+/* line 342, ../sass/product_page_styles.scss */
 .head_er {
   background-color: #00265d;
   color: white;
 }
 
 /*----------END TABLE STYLE------------*/
-/* line 342, ../sass/product_page_styles.scss */
+/* line 351, ../sass/product_page_styles.scss */
 .payment_options {
   padding-top: 30px;
   padding-right: 30px;
@@ -315,13 +325,13 @@ h5 {
   line-height: 30px;
   height: 400px;
 }
-/* line 346, ../sass/product_page_styles.scss */
+/* line 355, ../sass/product_page_styles.scss */
 .payment_options > img {
   margin: 0 auto;
   display: block;
 }
 
-/* line 352, ../sass/product_page_styles.scss */
+/* line 361, ../sass/product_page_styles.scss */
 .last_po {
   margin-bottom: 40px;
   font-size: 20px;
@@ -329,25 +339,25 @@ h5 {
   text-align: center;
 }
 
-/* line 357, ../sass/product_page_styles.scss */
+/* line 366, ../sass/product_page_styles.scss */
 .accept_ance {
   color: #e47832;
 }
 
-/* line 365, ../sass/product_page_styles.scss */
+/* line 374, ../sass/product_page_styles.scss */
 .po_list {
   width: 300px;
   float: left;
   margin-left: 80px;
 }
 
-/* line 371, ../sass/product_page_styles.scss */
+/* line 380, ../sass/product_page_styles.scss */
 .ship_ing {
   padding-top: 30px;
   line-height: 30px;
   height: 560px;
 }
-/* line 376, ../sass/product_page_styles.scss */
+/* line 385, ../sass/product_page_styles.scss */
 .ship_ing > p {
   margin-bottom: 40px;
   font-size: 20px;
@@ -356,13 +366,13 @@ h5 {
   padding-right: 30px;
 }
 
-/* line 383, ../sass/product_page_styles.scss */
+/* line 392, ../sass/product_page_styles.scss */
 .de_tail {
   height: 330px;
   padding-left: 30px;
 }
 
-/* line 388, ../sass/product_page_styles.scss */
+/* line 397, ../sass/product_page_styles.scss */
 .detail_two {
   border: solid red 1px;
   width: 230px;
@@ -381,7 +391,7 @@ h5 {
   margin-right: 10px;
 }
 
-/* line 395, ../sass/product_page_styles.scss */
+/* line 404, ../sass/product_page_styles.scss */
 .d_12 {
   font-weight: bold;
   background-color: #a7c539;
@@ -395,14 +405,14 @@ h5 {
   border: 5px transparent solid;
 }
 
-/* line 401, ../sass/product_page_styles.scss */
+/* line 410, ../sass/product_page_styles.scss */
 .d_13 {
   color: white;
   font-size: small;
   padding: 5px;
 }
 
-/* line 405, ../sass/product_page_styles.scss */
+/* line 414, ../sass/product_page_styles.scss */
 .sale_lease {
   padding-top: 30px;
   padding-right: 30px;
@@ -412,8 +422,8 @@ h5 {
   clear: both;
   padding-bottom: 30px;
 }
-/* line 411, ../sass/product_page_styles.scss */
-.sale_lease > img {
+/* line 421, ../sass/product_page_styles.scss */
+.sale_lease a > img {
   display: block;
   float: left;
   width: 500px;
@@ -421,18 +431,18 @@ h5 {
   margin-top: 10px;
 }
 
-/* line 420, ../sass/product_page_styles.scss */
+/* line 431, ../sass/product_page_styles.scss */
 .sell_er {
   width: 450px;
   float: right;
   margin-top: 45px;
 }
-/* line 425, ../sass/product_page_styles.scss */
+/* line 436, ../sass/product_page_styles.scss */
 .sell_er > h4, .sell_er > .d_12 {
   text-align: left !important;
   width: 450px !important;
 }
-/* line 430, ../sass/product_page_styles.scss */
+/* line 441, ../sass/product_page_styles.scss */
 .sell_er > ul {
   padding-left: 25px;
   margin-bottom: 40px;
@@ -440,27 +450,26 @@ h5 {
   color: #4d4d4f;
 }
 
-/* line 437, ../sass/product_page_styles.scss */
+/* line 448, ../sass/product_page_styles.scss */
 .sell_trade {
   padding-top: 30px;
   padding-right: 30px;
   padding-left: 30px;
   line-height: 30px;
   clear: both;
-  padding-bottom: 30px;
 }
-/* line 441, ../sass/product_page_styles.scss */
+/* line 451, ../sass/product_page_styles.scss */
 .sell_trade > img {
   display: block;
   margin: 0 auto;
   width: 400px;
 }
-/* line 447, ../sass/product_page_styles.scss */
+/* line 457, ../sass/product_page_styles.scss */
 .sell_trade > h4, .sell_trade > .d_12 {
   margin-top: 40px;
   width: 700px;
 }
-/* line 453, ../sass/product_page_styles.scss */
+/* line 463, ../sass/product_page_styles.scss */
 .sell_trade > p {
   margin-bottom: 40px;
   font-size: 20px;
@@ -468,5 +477,4 @@ h5 {
   text-align: center;
   width: 800px;
   margin: 0 auto;
-  margin-bottom: 30px;
 }
