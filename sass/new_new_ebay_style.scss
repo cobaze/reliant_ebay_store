@@ -8,12 +8,13 @@ $rt_color:#A7C539;
 $bg_gradient:-webkit-linear-gradient(#ffffff 0%, #c0c0c0 215%);
 $border: solid red 1px;
 $list_color:rgb(102, 102, 102);
+$lime_green_color: #A7C539;
 
 @mixin navpage_a{
 	display: block;
 	color: $other_color;
 	background-color: $bgr_color;
-	padding: .8em 1.3em .8em 1.2em;
+	padding: .8em 2.2em .8em 2.3em;
 	border:.13em $other_color;
 }
 
@@ -24,8 +25,8 @@ $list_color:rgb(102, 102, 102);
 }
 
 @mixin nav_page{
-	height: 20px;
-	margin-bottom:50px;
+	height: 39px;
+	margin-bottom:25px;
 	font-weight: bold;
 	font-family: $font_for_store;
 }
@@ -146,7 +147,7 @@ body{
 }
 
 #header{
-    height:400px;
+    height:430px;
 }
 
 #top_header{
@@ -235,12 +236,24 @@ body{
 #storage_made_easy{
 	width:580px;
 	height:240px;
-	float:right;
+	float:left;
+	margin-left: 45px;
 	font-size:17px;
 	line-height:22px;
 	font-weight: 400;
 	font-family: $font_for_store;
 	color: rgb(102, 102, 102);
+	
+	a{
+	text-decoration: none;
+	color: $lime_green_color;
+	}
+	p{
+	color: $list_color;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 22px;	
+	}
 }
 
 .rt{
@@ -259,16 +272,18 @@ body{
 
 	width: 520px;
 	margin: 0 auto;
-	border: $border;
-	
-	h2{
-	font-weight: bold;
-	}
 	
 	h5{
 	font-size: medium;
 	font-weight: bold;
 	padding-top: 20px;
+	padding-bottom: 10px;
+	color: $other_color;
+	}
+	
+	a{
+	text-decoration: none;
+	color: $lime_green_color;
 	}
 }
 
@@ -279,11 +294,29 @@ body{
 	line-height: 22px;
 }
 
+.our_comps{
+	margin-bottom: 30px;
+	color: $other_color;
+	font-weight: bold;
+}
+
+.our_process{
+	font-weight: bold;
+	color: $other_color;
+}
+
+.client_our{
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: $other_color;
+}
+
 .our_process_list{
 	font-size: 15px;
 	color: $list_color;
 	font-weight: normal;
 	line-height: 22px;
+	margin-bottom: 40px;
 	
 	li{
 		list-style: none;
@@ -294,20 +327,32 @@ body{
 		font-size: medium;
 		font-weight: bold;
 		padding-top: 5px;
+		color: $other_color;
 		
 	}
 }
 
+.our_diff{
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: $other_color;
+}
+
 .para_one{
-	font-weight: bolder;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	color: $list_color;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 22px;
 }
 
 .our_clients{
 	margin-top: 10px;
 	color: $list_color;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 22px;
 }
 
 .clients_pic{
@@ -320,7 +365,7 @@ body{
 .company_pic{
 	display: block;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 5px;
 	width: 250px;
 	float: right;
 	margin-left: 10px;
@@ -334,6 +379,43 @@ body{
 	margin-top: 30px;
 }
 
+.ship_details{
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: $other_color;
+}
+
+.shipping_detailing{
+	padding-top: 20px;
+	color: $other_color;
+}
+
+.cont{
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: $other_color;
+}
+
+.para_two{
+	color: $list_color;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+
+.toll_free{
+	color: $list_color;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.linkages{
+	margin-bottom: 10px;
+}
 /*---------------------END OUR PROCESS STYLE-----------------*/
 
 /*---------------------END HEADER STYLE-----------------*/
