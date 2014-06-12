@@ -303,6 +303,20 @@ body{
 .our_process{
 	font-weight: bold;
 	color: $other_color;
+	text-align: center;
+	margin-top: 30px;
+	font-size: large;
+}
+
+.sub_our_process{
+	@extend .our_process;
+	margin-bottom: 30px;
+	margin-top: 50px;
+	
+}
+
+.our_listing{
+	@extend .our_process;
 }
 
 .client_our{
