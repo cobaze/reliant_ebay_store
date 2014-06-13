@@ -249,13 +249,37 @@ h5{
 .certi_fied{
 	@include generality;
 	clear:both;
-	height: 1100px;
+	height: 1500px;
 }
 
 .rock_solid{
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 35px;
+}
+
+.our_process{
+	@extend .how_h4;
+	color: $h_color;
+}
+
+.sub_our_process{
+	color: $h_color;
+	margin-bottom: 20px;
+}
+
+.our_clients{
+	margin-bottom: 20px;
+	
+	>a{
+		text-decoration: none;
+		color: $lime_green_color;
+	}
+}
+
+.our_listing{
+	color: $h_color;
+	margin-bottom: 20px
 }
 
 .pp_page{
@@ -466,10 +490,7 @@ h5{
 		width: 800px;
 		margin: 0 auto;
 	}
-}			
-
-
-
+}
 
 
 
