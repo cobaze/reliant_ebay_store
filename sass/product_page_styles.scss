@@ -492,10 +492,45 @@ h5{
 	}
 }
 
+.contacti_mundo{
+	@include generality;
+	padding-bottom: 40px;
+	
+	>p{
+		@include the_last_pp;
+		width: 306px;
+		display: inline;
+		position: relative;
+		bottom: 40px;
+	}
+	
+	a{
+		text-decoration: none;
+		color: $lime_green_color;
+	}
+}
 
+.celly{
+	width: 80px;
+	margin-left: 210px;
+	display: inline;
+	position: relative;
+	top: 6px;
+}
 
+.mail_msg{
+	width: 80px;
+	display: inline;
+	margin-left: 140px;
+}
 
+.mailer{
+	top: -22px;
+}
 
+.num_num{
+	top:-25px;
+}
 
 
 

@@ -505,3 +505,53 @@ h5 {
   width: 800px;
   margin: 0 auto;
 }
+
+/* line 495, ../sass/product_page_styles.scss */
+.contacti_mundo {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  line-height: 30px;
+  padding-bottom: 40px;
+}
+/* line 499, ../sass/product_page_styles.scss */
+.contacti_mundo > p {
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #4d4d4f;
+  width: 306px;
+  display: inline;
+  position: relative;
+  bottom: 40px;
+}
+/* line 507, ../sass/product_page_styles.scss */
+.contacti_mundo a {
+  text-decoration: none;
+  color: #a7c539;
+}
+
+/* line 513, ../sass/product_page_styles.scss */
+.celly {
+  width: 80px;
+  margin-left: 210px;
+  display: inline;
+  position: relative;
+  top: 6px;
+}
+
+/* line 521, ../sass/product_page_styles.scss */
+.mail_msg {
+  width: 80px;
+  display: inline;
+  margin-left: 140px;
+}
+
+/* line 527, ../sass/product_page_styles.scss */
+.mailer {
+  top: -22px;
+}
+
+/* line 531, ../sass/product_page_styles.scss */
+.num_num {
+  top: -25px;
+}
